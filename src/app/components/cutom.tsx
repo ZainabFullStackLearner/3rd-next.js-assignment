@@ -1,4 +1,4 @@
-import { DraftModeProvider } from "next/dist/server/async-storage/draft-mode-provider";
+
 import React from "react";
 export default function Cutomise (){
     return(
