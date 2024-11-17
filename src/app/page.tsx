@@ -1,101 +1,82 @@
+
+import React from "react";
+import Hero from "./components/hero";
+import ProjectManage from "./components/project";
+import Work from "./components/work";
+import Extenxion from "./components/extension";
+import Cutomise from "./components/cutom";
+import Yourwork from "./components/your";
+import Sponsors from "./components/sponsor";
 import Image from "next/image";
-
-export default function Home() {
+import Logo from "@/app/assets/Logo.png"
+export default function Home(){
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+<div className="grid grid-rows-[20px-1fr-20px] items-center justify-between min-h-screen">
+<Hero/>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+
+<ProjectManage/>
+<Work/>
+<Extenxion/>
+<Cutomise/>
+<Yourwork/>
+<Sponsors/>
+<div className="w-[1920px] h-[461px] top-[5195px] px-[220px] pt-[140px] pb-8 bg-[#043873]  text-white">
+<div className="w-[1480px] h-[289px] gap-[100px] ">
+<div className="w-[1480px] h-[169px] gap-[100px] flex justify-between ">
+  <div className="w-[295px] h-[169px] gap-[15px] grid">
+    <Image src={Logo} alt="Logo" width={191} height={34} />
+      <div className="w-[240px] h-[120px]">
+        <p className="text-[#F7F7EE] text-[18px] leading-[30px] font-normal hover:translate-x-2 hover:text-blue-600">
+        whitepace was created for the new ways we 
+        live and work. We make a better workspace around the world
+        </p>
+      </div>
+ </div>
+ <div className="w-[295px] h-[127px] gap-[15px] grid ">
+<p className=" w-[69px] h-[22px] font-bold text-[18px] leading-[21.78px] text-white">
+  Product</p>
+  <p className=" w-[70px] h-5 font-normal text-[16px] leading-5 hover:text-blue-500 hover:translate-x-2">Overview</p>
+ <p className="w-[50px] h-5 font-normal text-[16px] leading-5 hover:text-blue-500 hover:translate-x-2">Pricing</p>
+ <p className="w-[177px] h-5 font-normal text-[16px] leading-5 hover:text-blue-500 hover:translate-x-2">Customer stories</p>
+
+
+ </div>
+ <div className="w-[295px] h-[130px] gap-4 grid ">
+  <p className="w-[91px] h-[22px] font-bold  text-[18px] leading-[21.78px] text-white">
+  Resources
+  </p>
+  <p className=" w-[33px] h-5 font-normal text-[16px] leading-5 hover:text-blue-500 hover:translate-x-2">Blog</p>
+  <p className=" w-[128px] h-5 font-normal text-[16px] leading-5 hover:text-blue-500 hover:translate-x-2">Guides & tutorials</p>
+  <p className=" w-[130px] h-5 font-normal text-[16px] leading-5 hover:text-blue-500 hover:translate-x-2">Help center</p>
+ </div>
+ <div className="w-[295px] h-[130px] gap-4 grid ">
+  <p className="w-[83px] h-[22px] font-bold text-[18px] leading-[21.78px] text-white">
+  Company
+  </p>
+  <p className=" w-[66px] h-5 font-normal text-[16px] leading-5 hover:text-blue-500 hover:translate-x-2">About us</p>
+  <p className=" w-[62px] h-5 font-normal text-[16px] leading-5 hover:text-blue-500 hover:translate-x-2">Careers</p>
+  <p className=" w-[99px] h-5 font-normal text-[16px] leading-5 hover:text-blue-500 hover:translate-x-2">Media kit</p>
+ </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  )
 }
+
+
